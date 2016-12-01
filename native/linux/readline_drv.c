@@ -50,6 +50,23 @@ ErlDrvEntry readline_driver_entry = {
     "libreadlinedrv",              /* char *driver_name, the argument to open_port */
     NULL,                       /* F_PTR finish, called when unloaded */
     NULL,                       /* F_PTR control, port_command callback */
+    NULL,                       /* F_PTR SIZE, reserved */
+    NULL,                       /* F_PTR timeout, reserved */
+    NULL,                       /* F_PTR timeout, reserved */
+
+
+
+    NULL,                       /* F_PTR timeout, reserved */
+    NULL,                       /* F_PTR timeout, reserved */
+    NULL,                       /* F_PTR timeout, reserved */
+    NULL,                       /* F_PTR timeout, reserved */
+
+    ERL_DRV_EXTENDED_MARKER,
+    ERL_DRV_EXTENDED_MAJOR_VERSION,
+    ERL_DRV_EXTENDED_MINOR_VERSION,
+    0,   
+    
+    NULL,                       /* F_PTR timeout, reserved */
     NULL,                       /* F_PTR timeout, reserved */
     NULL                        /* F_PTR outputv, reserved */
 };
