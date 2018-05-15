@@ -7,5 +7,5 @@ libreadlinedrv_la_LIBADD = -lreadline -lhistory
 bin_PROGRAMS = essh
 
 essh:   
-	echo "#!/bin/sh\n" > essh
+	echo "#!/bin/sh" > essh
 	echo "erl -noinput -pa $(prefix)/erlyssh/ebin -run essh start $(libdir) \$${ESSH_LIST_HOME}/\$$* " >>essh
